@@ -1,7 +1,7 @@
-infiniteStream = require("./infinite-stream")
-
-infiniteStream
-  .map (v => v.value)
-  .subscribe(console.log)
+streams = require("./streams");
+  
+streams.infinite
+  .map (v => v * 2)
+  .subscribe(console.log);
 
 console.log("Next");
