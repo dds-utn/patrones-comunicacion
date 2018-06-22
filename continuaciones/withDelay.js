@@ -1,0 +1,1 @@
+module.exports = (action) => setTimeout(action, 2000);
