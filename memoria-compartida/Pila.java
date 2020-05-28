@@ -1,9 +1,9 @@
- public class Stack {
-   public static final SIZE = 50;
+ public class Pila {
+   public static final int SIZE = 50;
    private int  current;
-   private int[] stack =;
+   private int[] stack;
    
-   public Stack () {
+   public Pila() {
      current = 0;
      stack = new int[50];
    }
@@ -26,14 +26,14 @@
      return stack[current+1];
    }
    
-   public static void main() {
-     Stack s = new Stack();
+   public static int main() {
+     Pila s = new Pila();
      
      s.push(1);
      s.push(2);
-     System.out.println("First value on top is %d\n", s.pop());
-     System.out.println("Second value on top is %d\n", s.pop());
-     System.out.println("Third value on top is %d\n", s.pop());
+     System.out.println("First value on top is %d\n" + s.pop());
+     System.out.println("Second value on top is %d\n" + s.pop());
+     System.out.println("Third value on top is %d\n" + s.pop());
      System.out.println("end\n");
      	
      return 0;
